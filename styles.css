@@ -358,13 +358,12 @@ input:valid {
     body {
         font-size: 1rem;
         background-attachment: scroll;
-        background-size: cover;
+        background-size: contain;
     }
     .site-header {
         flex-direction: row;
         justify-content: space-between;
         padding: 0.625rem 0.5rem;
-        width: 100%;
     }
     .main-nav {
         display: none;
@@ -399,22 +398,12 @@ input:valid {
     }
     .site-main {
         padding: 2.5rem 0.5rem;
-        margin: 0 auto;
     }
     .site-footer {
         padding: 1.25rem 0.5rem;
-        width: 100%;
     }
     .contact-container {
-        justify-content: center;
         padding-left: 0;
         padding-right: 0;
-    }
-    .contact-form,
-    .contact-info {
-        margin: 0 auto;
-    }
-    input, textarea, select, button{
-        font-size: 16px;
     }
 }
