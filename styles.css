@@ -366,20 +366,16 @@ input:valid {
         display: block;
     }
     .music-button {
-        display: none;  /* Fine, music on mobile can drain battery anyway */
+        display: none;
     }
     .projects-grid, .goals-grid {
         grid-template-columns: 1fr;
     }
     .project-img, .project-animation {
-        max-width: 80vw;  /* Fluid! Fills most of mobile screen without overflow */
-        padding: 10px;  /* Slightly less padding for tight screens */
+        max-width: 80vw;
+        padding: 10px;
     }
-    /* REMOVE body { font-size: 14px; } – It's trash; let default 16px breathe for readability */
-    /* Add this for better mobile text scaling */
     body {
-        font-size: 16px;  /* Base reset if needed */
+        font-size: 16px;
     }
 }
-
-
