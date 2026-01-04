@@ -338,7 +338,7 @@ input:valid {
 .btn:hover {
     background: #cc7a00;
 }
-
+/*
 @media (max-width: 768px) {
     .site-header {
         flex-direction: row;
@@ -377,4 +377,5 @@ input:valid {
     body {
         font-size: 14px;
     }
-}
+
+}*/
