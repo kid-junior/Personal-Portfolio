@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage | Kidus Yosef</title>
+    <meta name="description" content="Portfolio of Me, aspiring full-stack developer skilled in Frontend & Backend Development.">
+    <meta name="keywords" content="Kidus Yosef, full-stack developer, web development, portfolio, Ethiopia developer">
+    <meta name="author" content="Kidus Yosef">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Homepage | Kidus Yosef">
+    <meta property="og:description" content="Discover my HTML/JS/CSS projects and skills as an Ethiopia-based aspiring full-stack dev.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/kid-junior/Basic-HTML-Website/main/assets/images/pp.png">
+    <meta property="og:url" content="https://github.com/kid-junior/Basic-HTML-Website">
+    <meta property="og:type" content="website">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/82c07fc8d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/k.ico">
+</head>
+<body>
+    <header class="site-header" id="header">
+        <img src="assets/images/k.png" alt="Kidus Yosef Logo" class="logo">
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="about_me.html" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="contacts.html" class="nav-link">Contacts</a></li>
+            </ul>
+        </nav>
+        <button id="music-toggle" class="music-button" aria-label="Toggle music">Play Music</button>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <audio id="bg-music" loop src="assets/audio/moog_city_2.mp3"></audio>
+    <main class="site-main">
+        <section id="hero" class="hero-section glass">
+            <div class="hero-content">
+                <img src="assets/images/pp.png" alt="Profile Picture" class="profile-img">
+                <h1 class="hero-title">Kidus Yosef</h1>
+                <h2 class="hero-subtitle">Aspiring Full Stack Developer</h2>
+                <div class="social-links">
+                    <a href="https://github.com/kid-junior" class="social-link github"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/kidus-yosef-364a29332" class="social-link linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.upwork.com/freelancers/~01c59803c8b7122263?mp_source=share" class="social-link upwork"><i class="fa-brands fa-upwork"></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about-section glass">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-desc">Hi, I’m Kidus Yosef, an aspiring full-stack developer,
+                currently building skills in Frontend & Backend Development.
+            </p>
+            <a href="about_me.html" title="About Me" class="btn">Read More</a>
+        </section>
+        <section id="projects" class="projects-section glass">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card glass">
+                    <figure class="project-figure">
+                        <img src="assets/images/CV.png" alt="Screenshot of my single-page CV form built with HTML" class="project-img">
+                        <figcaption class="project-caption">
+                            <h3 class="project-title">Single-Page CV Form</h3>
+                            <p class="project-desc">A clean, responsive CV built purely with HTML semantics.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article class="project-card glass">
+                    <figure class="project-figure">
+                        <dotlottie-player id="project-lottie" src="https://lottie.host/a4431120-42d1-463a-b2a3-56a5c35bc2ff/943NKFWFxr.lottie" background="transparent" speed="1" loop autoplay class="project-animation"></dotlottie-player>
+                        <figcaption class="project-caption">
+                            <h3 class="project-title">Upcoming Project</h3>
+                            <p class="project-desc">Stay tuned for more exciting developments!</p>
+                        </figcaption>
+                    </figure>
+                </article>
+            </div>
+            <p class="view-all">
+                <a href="projects.html" class="btn">View All Projects</a>
+            </p>
+        </section>
+    </main>
+    <footer class="site-footer glass" id="footer">
+        <p>&copy; 2026 Kidus Yosef. All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>

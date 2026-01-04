@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: url('https://w.wallhaven.cc/full/j3/wallhaven-j31g9y.jpg') no-repeat center center/cover fixed;
+    color: #fff;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+h1, h2, h3, .hero-title, .hero-subtitle, .project-title {
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-align: center;
+
+}
+.section-subtitle, .section-title, h4{
+    padding-bottom: 10px;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    image-rendering: optimizeQuality;
+}
+
+/* Glassmorphism Class */
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px; 
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(139, 69, 19, 0.7);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #000;
+}
+
+.logo {
+    width: 50px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: #ff9900;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #cc7a00;
+}
+
+.nav-link.active {
+    background: rgba(255, 153, 0, 0.3);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.music-button {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 5px;
+}
+
+.site-main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-title {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-link {
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-link.github:hover {
+    color: #74480b;
+}
+
+.social-link.linkedin:hover {
+    color: #0058cc;
+}
+
+.social-link.upwork:hover {
+    color: #18c601;
+}
+
+.view-all {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.about-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-desc {
+    margin-bottom: 20px; 
+    line-height: 1.8;
+}
+
+.skills-section {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 40px;
+}
+
+.skills-list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(3, auto);
+    gap: 15px;
+    list-style: none;
+}
+
+.goals-section {
+    text-align: center;
+}
+
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.goal-item {
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    padding: 15px;
+    text-align: center;
+}
+
+.project-img {
+    max-width: 350px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+.project-animation {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 10px;
+    padding: 20px;
+    display: block;
+    image-rendering: optimizeQuality;
+}
+
+.project-desc {
+    margin-bottom: 20px;
+}
+
+.project-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.paragraph-desc{
+    line-height: 1.8;
+}    
+
+.info-desc{
+    padding-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact-container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 32px;
+}  
+
+.contact-info{
+    flex: 1;
+    max-width: 300px;
+    max-height: 250px;
+    text-align: center;
+}    
+.contact-form {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.contact-info .social-links {
+    max-width: 200px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    border-radius: 4px;
+}
+
+textarea {
+    min-height: 120px;
+    max-height: 300px; 
+    resize: vertical;
+    overflow-y: auto;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
+.submit-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: auto;
+    margin: 0 auto; 
+}
+
+.country-icon {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.btn {
+    background: #ff9900;
+    color: #fff;
+    padding: 10px 15px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #cc7a00;
+}
+
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(139, 69, 19, 0.9);
+    }
+    .main-nav.active {
+        display: block;
+    }
+    .nav-list {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-item {
+        margin: 10px 0;
+    }
+    .hamburger {
+        display: block;
+    }
+    .music-button {
+        display: none;
+    }
+    .projects-grid, .goals-grid {
+        grid-template-columns: 1fr;
+    }
+    .project-img {
+        max-width: 150px;
+    }
+    body {
+        font-size: 14px;
+    }
+}

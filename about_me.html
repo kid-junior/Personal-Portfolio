@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Kidus Yosef</title>
+    <meta name="description" content="Portfolio of Me, aspiring full-stack developer skilled in Frontend & Backend Development.">
+    <meta name="keywords" content="Kidus Yosef, full-stack developer, web development, portfolio, Ethiopia developer">
+    <meta name="author" content="Kidus Yosef">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="About Me | Kidus Yosef">
+    <meta property="og:description" content="Discover my HTML/JS/CSS projects and skills as an Ethiopia-based aspiring full-stack dev.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/kid-junior/Basic-HTML-Website/main/assets/images/pp.png">
+    <meta property="og:url" content="https://github.com/kid-junior/Basic-HTML-Website">
+    <meta property="og:type" content="website">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/82c07fc8d6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/k.ico">
+</head>
+<body>
+    <header class="site-header" id="header">
+        <img src="assets/images/k.png" alt="Kidus Yosef Logo" class="logo">
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="about_me.html" class="nav-link active">About Me</a></li>
+                <li class="nav-item"><a href="contacts.html" class="nav-link">Contacts</a></li>
+            </ul>
+        </nav>
+        <button id="music-toggle" class="music-button" aria-label="Toggle music">Play Music</button>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <audio id="bg-music" loop src="assets/audio/moog_city_2.mp3"></audio>
+    <main class="site-main">
+        <section id="about" class="about-section glass">
+            <h2 class="section-title">👋 About Me</h2>
+            <p class="section-desc">
+                Hi, I’m Kidus Yosef, an aspiring full-stack developer passionate about building clean, functional, and visually engaging web experiences. I enjoy turning ideas into real projects and improving my skills through hands-on practice. I’m currently focused on learning modern web technologies, strengthening my frontend foundations, and exploring creative tools like Blender for 3D design and Photoshop for visual editing.
+            </p>
+            <p class="section-desc">
+                I also have a growing interest in data analysis, which helps me think logically and solve problems more effectively. I believe in learning by doing — building, breaking, fixing, and improving with every project. My goal is to combine strong technical skills, clean design, and problem-solving to create meaningful digital experiences.
+            </p>
+        </section>
+        <section id="skills" class="skills-section glass">
+            <h3 class="section-subtitle">Skills</h3>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Git & GitHub</li>
+            </ul>
+        </section>
+        <section id="goals" class="goals-section glass">
+            <h3 class="section-subtitle">🎯 Goals</h3>
+            <div class="goals-grid">
+                <div class="goal-item">
+                    <h4>🚀 Become a Strong Full-Stack Developer</h4>
+                    <p>Build a solid foundation in frontend and backend development by working on real projects. Long-term, aim to confidently design and develop complete web applications from scratch.</p>
+                </div>
+                <div class="goal-item">
+                    <h4>🎨 Blend Design with Functionality</h4>
+                    <p>Improve UI/UX and visual design skills while learning how to create interfaces that are both beautiful and easy to use. Long-term, aim to build visually polished and user-friendly experiences.</p>
+                </div>
+                <div class="goal-item">
+                    <h4>🛠️ Grow Through Projects and Practice</h4>
+                    <p>Continuously improve by building projects, refining workflows, and solving real problems. Long-term, grow into a well-rounded developer capable of contributing to meaningful and impactful software.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer glass" id="footer">
+        <p>&copy; 2026 Kidus Yosef. All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
