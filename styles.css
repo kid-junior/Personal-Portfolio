@@ -357,6 +357,7 @@ input:valid {
     }
     body {
         font-size: 1rem;
+        background-attachment: scroll;
     }
     .site-header {
         flex-direction: row;
@@ -396,7 +397,10 @@ input:valid {
         padding: 0.625rem;
     }
     .site-main {
-        padding: 2.5rem 0.5rem;
+        width: 100%;
+        max-width: 75rem;
+        padding-left: clamp(0.75rem, 4vw, 1.25rem);
+        padding-right: clamp(0.75rem, 4vw, 1.25rem);
     }
     .site-footer {
         padding: 1.25rem 0.5rem;
@@ -405,5 +409,15 @@ input:valid {
     .contact-container {
         padding-left: 0;
         padding-right: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        justify-items: center;
     }
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        max-width: 100%;
+}
+
 }
