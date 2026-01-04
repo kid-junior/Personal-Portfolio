@@ -350,9 +350,14 @@ input:valid {
 }
 
 @media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+        overflow-x: hidden;
+    }
     .site-header {
         flex-direction: row;
         justify-content: space-between;
+        padding: 0.625rem 0.5rem;
     }
     .main-nav {
         display: none;
@@ -385,7 +390,14 @@ input:valid {
         max-width: 80vw;
         padding: 0.625rem;
     }
-    body {
-        font-size: 1rem;
+    .site-main {
+        padding: 2.5rem 0.5rem;
+    }
+    .site-footer {
+        padding: 1.25rem 0.5rem;
+    }
+    .contact-container {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
