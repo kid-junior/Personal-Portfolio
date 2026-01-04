@@ -1,25 +1,43 @@
-// Music Toggle
 const musicToggle = document.getElementById('music-toggle');
 const bgMusic = document.getElementById('bg-music');
-let isPlaying = false;
-musicToggle.addEventListener('click', () => {
+
+let isPlaying = localStorage.getItem('musicPlaying') === 'true';
+let lastTime = parseFloat(localStorage.getItem('musicTime')) || 0;
+
+
+bgMusic.currentTime = lastTime;
+
+function updateMusicState() {
     if (isPlaying) {
+        bgMusic.play().catch(error => console.error('Music play failed:', error));
+        musicToggle.textContent = 'Stop Music';
+    } else {
         bgMusic.pause();
         musicToggle.textContent = 'Play Music';
-    } else {
-        bgMusic.play();
-        musicToggle.textContent = 'Stop Music';
     }
-    isPlaying = !isPlaying;
+    localStorage.setItem('musicPlaying', isPlaying);
+}
+
+bgMusic.addEventListener('timeupdate', () => {
+    localStorage.setItem('musicTime', bgMusic.currentTime);
 });
-// Hamburger Menu
+
+document.addEventListener('DOMContentLoaded', () => {
+    updateMusicState();
+});
+
+musicToggle.addEventListener('click', () => {
+    isPlaying = !isPlaying;
+    updateMusicState();
+});
+
 const hamburger = document.getElementById('hamburger');
 const mainNav = document.querySelector('.main-nav');
 hamburger.addEventListener('click', () => {
     mainNav.classList.toggle('active');
     hamburger.classList.toggle('active');
 });
-// Lottie for Submit (plays on click before submit)
+
 const submitBtn = document.querySelector('.submit-btn');
 const lottiePlayer = document.getElementById('submit-lottie');
 const form = document.getElementById('contact-form');
