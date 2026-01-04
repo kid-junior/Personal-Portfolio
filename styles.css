@@ -357,7 +357,6 @@ input:valid {
     }
     body {
         font-size: 1rem;
-        background-attachment: scroll;
     }
     .site-header {
         flex-direction: row;
@@ -392,6 +391,14 @@ input:valid {
     .projects-grid, .goals-grid {
         grid-template-columns: 1fr;
     }
+    .projects-grid {
+        padding-left: 0;
+        padding-right: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        justify-items: center;
+    }
     .project-img, .project-animation {
         max-width: 80vw;
         padding: 0.625rem;
@@ -421,3 +428,4 @@ input:valid {
 }
 
 }
+
