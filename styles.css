@@ -1,17 +1,14 @@
 :root {
     font-size: 16px;
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 html{
     height: 100%;
 }
-
 body {
     font-family: sans-serif;
     background: url('https://w.wallhaven.cc/full/j3/wallhaven-j31g9y.jpg') no-repeat center center/cover fixed;
@@ -22,40 +19,34 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 h1, h2, h3, .hero-title, .hero-subtitle, .project-title {
     font-family: 'Press Start 2P', cursive;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     text-align: center;
 }
-
 .section-subtitle, .section-title, h4 {
     padding-bottom: 0.625rem;
     font-family: 'Press Start 2P', cursive;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     text-align: center;
 }
-
 a {
     text-decoration: none;
     color: inherit;
 }
-
 img {
     max-width: 100%;
     height: auto;
     image-rendering: optimizeQuality;
 }
-
 .glass {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 8px; 
+    border-radius: 8px;
     padding: 1.25rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .site-header {
     display: flex;
     justify-content: space-between;
@@ -68,37 +59,30 @@ img {
     z-index: 1000;
     border-bottom: 2px solid #000;
 }
-
 .logo {
     width: 3.125rem;
 }
-
 .nav-list {
     display: flex;
     list-style: none;
 }
-
 .nav-item {
     margin-left: 1.25rem;
 }
-
 .nav-link {
     color: #ff9900;
     font-family: 'Press Start 2P', cursive;
     font-size: 0.875rem;
     transition: color 0.3s;
 }
-
 .nav-link:hover {
     color: #cc7a00;
 }
-
 .nav-link.active {
     background: rgba(255, 153, 0, 0.3);
     padding: 0.3125rem 0.625rem;
     border-radius: 4px;
 }
-
 .music-button {
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
@@ -108,12 +92,10 @@ img {
     font-family: 'Press Start 2P', cursive;
     font-size: 0.75rem;
 }
-
 .hamburger {
     display: none;
     cursor: pointer;
 }
-
 .hamburger span {
     display: block;
     width: 1.5625rem;
@@ -121,79 +103,68 @@ img {
     background: #fff;
     margin: 0.3125rem;
 }
-
 .site-main {
     padding: 2.5rem 1.25rem;
     max-width: 75rem;
     margin: 0 auto;
     flex-grow: 1;
 }
-
 .hero-section {
     text-align: center;
     margin-bottom: 2.5rem;
+    max-width: 100%;
+    overflow: hidden;
 }
-
 .profile-img {
     width: 9.375rem;
     border-radius: 50%;
     border: 4px solid rgba(255, 255, 255, 0.3);
 }
-
 .hero-title {
     font-size: clamp(1.5rem, 4vw, 2rem);
     margin: 0.625rem 0;
 }
-
 .hero-subtitle {
     font-size: clamp(0.875rem, 3vw, 1.125rem);
     margin-bottom: 1.25rem;
 }
-
 .social-links {
     display: flex;
     justify-content: center;
     gap: 0.9375rem;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
-
 .social-link {
     font-size: 1.5rem;
     transition: color 0.3s;
 }
-
 .social-link.github:hover {
     color: #74480b;
 }
-
 .social-link.linkedin:hover {
     color: #0058cc;
 }
-
 .social-link.upwork:hover {
     color: #18c601;
 }
-
 .view-all {
     padding-top: 0.9375rem;
     text-align: center;
 }
-
 .about-section {
     text-align: center;
     margin-bottom: 2.5rem;
 }
-
 .section-desc {
     margin-bottom: 1.25rem;
     line-height: 1.8;
 }
-
 .skills-section {
     text-align: center;
     max-width: 31.25rem;
     margin: 0 auto 2.5rem;
 }
-
 .skills-list {
     display: grid;
     grid-auto-flow: column;
@@ -201,40 +172,41 @@ img {
     gap: 0.9375rem;
     list-style: none;
 }
-
 .goals-section {
     text-align: center;
 }
-
 .goals-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
     gap: 1.25rem;
 }
-
 .goal-item {
     padding: 0.9375rem;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
 }
-
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
     gap: 1.25rem;
+    max-width: 100%;
 }
-
 .project-card {
     padding: 0.9375rem;
     text-align: center;
 }
-
+.project-img,
+.project-animation {
+    max-width: 21.875rem;
+    margin-bottom: 0.625rem;
+    padding: 0.625rem;
+    margin: 0 auto;
+}
 .project-img {
     max-width: 21.875rem;
     margin-bottom: 0.625rem;
     padding: 1.25rem;
 }
-
 .project-animation {
     max-width: 31.25rem;
     width: 100%;
@@ -244,58 +216,50 @@ img {
     display: block;
     image-rendering: optimizeQuality;
 }
-
 .project-desc {
     margin-bottom: 1.25rem;
 }
-
 .project-links {
     display: flex;
     justify-content: center;
     gap: 0.625rem;
 }
-
 .paragraph-desc {
     line-height: 1.8;
-}    
-
+}
 .info-desc {
     padding-bottom: 1.875rem;
     font-size: 1.25rem;
     text-align: center;
 }
-
 .contact-container {
     display: flex;
     gap: 2.5rem;
     flex-wrap: wrap;
     justify-content: center;
     padding-left: 2rem;
-}  
-
+}
 .contact-info {
     flex: 1;
     max-width: 18.75rem;
     max-height: 15.625rem;
     text-align: center;
-}    
+}
 .contact-form {
     flex: 1;
-    max-width: 37.5rem;
     text-align: left;
+    min-width: 30rem;
+    max-width: 45rem;
     overflow: hidden;
 }
-
 .contact-info .social-links {
     max-width: 12.5rem;
     margin: 0 auto;
     gap: 0.625rem;
 }
-
 .form-field {
     margin-bottom: 1.25rem;
 }
-
 input, textarea {
     width: 100%;
     padding: 0.75rem;
@@ -304,36 +268,30 @@ input, textarea {
     color: #fff;
     border-radius: 4px;
 }
-
 textarea {
     min-height: 7.5rem;
     max-height: 18.75rem;
     resize: vertical;
     overflow-y: auto;
 }
-
 input:valid {
   border: 2px solid green;
 }
-
 .submit-btn {
     display: flex;
     align-items: center;
     gap: 0.625rem;
     width: auto;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
-
 .country-icon {
     width: 1.875rem;
     vertical-align: middle;
 }
-
 .site-footer {
     text-align: center;
     padding: 1.25rem;
 }
-
 .btn {
     background: #ff9900;
     color: #fff;
@@ -344,11 +302,9 @@ input:valid {
     font-size: 0.75rem;
     transition: background 0.3s;
 }
-
 .btn:hover {
     background: #cc7a00;
 }
-
 @media (max-width: 768px) {
     html, body{
         width: 100%;
@@ -357,6 +313,21 @@ input:valid {
     }
     body {
         font-size: 1rem;
+        overflow-x: hidden;
+    }
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('https://w.wallhaven.cc/full/j3/wallhaven-j31g9y.jpg') no-repeat center center/cover;
+        z-index: -1;
+        will-change: transform;
+    }
+    body {
+        background: none;
     }
     .site-header {
         flex-direction: row;
@@ -390,42 +361,52 @@ input:valid {
     }
     .projects-grid, .goals-grid {
         grid-template-columns: 1fr;
+        gap: 0.625rem;
     }
-    .projects-grid {
-        padding-left: 0;
-        padding-right: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        justify-items: center;
+    .project-card {
+        padding: 0.5rem;
     }
     .project-img, .project-animation {
-        max-width: 80vw;
+        max-width: calc(100vw - 2rem);
+        padding: 0.3125rem;
+        margin: 0 auto;
+    }
+    .hero-section, .social-links {
+        max-width: 100%;
+        padding: 0 0.5rem;
+    }
+    .glass {
         padding: 0.625rem;
+        border-radius: 4px;
     }
     .site-main {
-        width: 100%;
-        max-width: 75rem;
-        padding-left: clamp(0.75rem, 4vw, 1.25rem);
-        padding-right: clamp(0.75rem, 4vw, 1.25rem);
+        padding: 2.5rem 0.5rem;
     }
     .site-footer {
         padding: 1.25rem 0.5rem;
         width: 100%;
     }
     .contact-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
         padding-left: 0;
         padding-right: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-        justify-items: center;
+        padding: 0 0.5rem;
     }
-    .contact-info,
+    .contact-info {
+        max-height: none;
+        max-width: 90vw;
+        width: 90%;
+    }
     .contact-form {
-        width: 100%;
-        max-width: 100%;
+        max-width: none;
+        width: 90%;
+        min-width: 0;
+    }
+    .form-field label {
+        display: block;
+        margin-bottom: 0.3125rem;
+    }
 }
-
-}
-
