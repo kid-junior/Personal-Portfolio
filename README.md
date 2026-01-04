@@ -1,7 +1,7 @@
 # Personal-Portfolio
 This is my personal portfolio website, showcasing my journey as an aspiring full-stack developer from Ethiopia. Built with HTML, CSS, and a dash of JavaScript for that extra polish—think Minecraft-inspired design with glassmorphism and interactive elements.
 
-Created as part of the👉<a href="https://roadmap.sh/projects/portfolio-website" target="_blank">Roadmap.sh</a>
+Created as part of the 👉<a href="https://roadmap.sh/projects/portfolio-website" target="_blank">Roadmap.sh</a>
 
 ✨<a href="https://kid-junior.github.io/Personal-Portfolio/" target="_blank">Live Demo</a>)
 
