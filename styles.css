@@ -357,13 +357,12 @@ input:valid {
     }
     body {
         font-size: 1rem;
-        background-attachment: scroll;
-        background-size: contain;
     }
     .site-header {
         flex-direction: row;
         justify-content: space-between;
         padding: 0.625rem 0.5rem;
+        width: 100%;
     }
     .main-nav {
         display: none;
@@ -401,6 +400,7 @@ input:valid {
     }
     .site-footer {
         padding: 1.25rem 0.5rem;
+        width: 100%;
     }
     .contact-container {
         padding-left: 0;
