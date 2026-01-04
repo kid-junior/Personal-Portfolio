@@ -348,3 +348,55 @@ input:valid {
 .btn:hover {
     background: #cc7a00;
 }
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+        overflow-x: hidden;
+    }
+    .site-header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.625rem 0.5rem;
+    }
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 4.375rem;
+        left: 0;
+        width: 100%;
+        background: rgba(139, 69, 19, 0.9);
+    }
+    .main-nav.active {
+        display: block;
+    }
+    .nav-list {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-item {
+        margin: 0.625rem 0;
+    }
+    .hamburger {
+        display: block;
+    }
+    .music-button {
+        display: none;
+    }
+    .projects-grid, .goals-grid {
+        grid-template-columns: 1fr;
+    }
+    .project-img, .project-animation {
+        max-width: 80vw;
+        padding: 0.625rem;
+    }
+    .site-main {
+        padding: 2.5rem 0.5rem;
+    }
+    .site-footer {
+        padding: 1.25rem 0.5rem;
+    }
+    .contact-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
