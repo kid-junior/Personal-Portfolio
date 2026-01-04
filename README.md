@@ -3,7 +3,7 @@ This is my personal portfolio website, showcasing my journey as an aspiring full
 
 Created as part of the 👉<a href="https://roadmap.sh/projects/portfolio-website" target="_blank">Roadmap.sh</a>
 
-✨<a href="https://kid-junior.github.io/Personal-Portfolio/" target="_blank">Live Demo</a>)
+✨ <a href="https://kid-junior.github.io/Personal-Portfolio/" target="_blank">Live Demo</a> ✨
 
 The goal of this project is to demonstrate my growing skills in web development, from semantic HTML structure to responsive CSS styling and basic JS functionality, all while creating a fun, thematic site to highlight my projects and bio.
 <hr>
