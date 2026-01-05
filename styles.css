@@ -232,9 +232,12 @@ img {
 }
 .paragraph-desc {
     line-height: 1.8;
+    padding-bottom: 1rem;
+}
+.info-title{
+    margin-top: 1.725rem;
 }
 .info-desc {
-    padding-bottom: 1.875rem;
     font-size: 1.25rem;
     text-align: center;
 }
@@ -440,14 +443,18 @@ input:valid {
         flex: 0 0 auto;
         max-width: 18rem;
         width: 90%;
-        max-height: 12rem;
+        max-height: 13rem;
         padding: 1rem;
         text-align: center;
+    }
+    .info-title{
+        margin-top: 0;
     }
     .contact-info .info-title {
         font-size: 0.95rem;
     }
     .info-desc{
+        padding-bottom: 1.125rem;
         font-size: 1.125rem;
     }
     .contact-info .social-links {
