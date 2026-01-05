@@ -91,6 +91,7 @@ img {
     color: #fff;
     border: 1px solid #fff;
     padding: 0.5rem 0.75rem;
+    margin-right: 0.5rem;
     cursor: pointer;
     font-family: 'Press Start 2P', cursive;
     font-size: 0.75rem;
@@ -315,6 +316,22 @@ input:valid {
 }
 .btn:hover {
     background: #cc7a00;
+}
+@media (max-width: 768px) {
+    .section-desc-desktop {
+        display: none;
+    }
+    .section-desc-mobile {
+        display: block;
+    }
+}
+@media (min-width: 769px) {
+    .section-desc-desktop {
+        display: block;
+    }
+    .section-desc-mobile {
+        display: none;
+    }
 }
 @media (max-width: 768px) {
     body::before {
