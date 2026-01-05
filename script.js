@@ -43,10 +43,29 @@ const lottiePlayer = document.getElementById('submit-lottie');
 const form = document.getElementById('contact-form');
 
 if (submitBtn && lottiePlayer && form) {
-  submitBtn.addEventListener('click', (e) => {
-    lottiePlayer.play();
-    setTimeout(() => {
-      form.submit();
-    }, 2000);
-  });
+    submitBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (form.checkValidity()) {
+            lottiePlayer.play();
+            setTimeout(() => {
+                form.submit();
+            }, 2000);
+        } else {
+            form.reportValidity();
+            alert('Please fill all required fields correctly before submitting.');
+        }
+    });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('contact-form');
+  if (form) {
+    form.addEventListener('submit', (event) => {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        form.reportValidity();
+        alert('Please fill all required fields correctly before submitting.');
+      }
+    });
+  }
+});
