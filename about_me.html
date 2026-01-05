@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Kidus Yosef</title>
+    <title>Contacts | Kidus Yosef</title>
     <meta name="description" content="Portfolio of Me, aspiring full-stack developer skilled in Frontend & Backend Development.">
     <meta name="keywords" content="Kidus Yosef, full-stack developer, web development, portfolio, Ethiopia developer">
     <meta name="author" content="Kidus Yosef">
     <meta name="robots" content="index, follow">
-    <meta property="og:title" content="About Me | Kidus Yosef">
+    <meta property="og:title" content="Contacts | Kidus Yosef">
     <meta property="og:description" content="Discover my HTML/JS/CSS projects and skills as an Ethiopia-based aspiring full-stack dev.">
     <meta property="og:image" content="https://raw.githubusercontent.com/kid-junior/Basic-HTML-Website/main/assets/images/pp.png">
     <meta property="og:url" content="https://github.com/kid-junior/Basic-HTML-Website">
@@ -25,8 +25,8 @@
             <ul class="nav-list">
                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="about_me.html" class="nav-link active">About Me</a></li>
-                <li class="nav-item"><a href="contacts.html" class="nav-link">Contacts</a></li>
+                <li class="nav-item"><a href="about_me.html" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="contacts.html" class="nav-link active">Contacts</a></li>
             </ul>
         </nav>
         <button id="music-toggle" class="music-button" aria-label="Toggle music">Play Music</button>
@@ -38,56 +38,43 @@
     </header>
     <audio id="bg-music" loop src="assets/audio/moog_city_2.mp3"></audio>
     <main class="site-main">
-        <section id="about" class="about-section glass">
-            <h2 class="section-title">👋 About Me</h2>
-            <div class="section-desc-desktop">
-                <p class="section-desc">
-                    Hi, I’m Kidus Yosef, an aspiring full-stack developer passionate about building clean, functional, and visually engaging web experiences. I enjoy turning ideas into real projects and improving my skills through hands-on practice.
-                </p>
-                <p class="section-desc">
-                    I’m currently focused on learning modern web technologies, strengthening my frontend foundations, and exploring creative tools like Blender for 3D design and Photoshop for visual editing.I also have a growing interest in data analysis, which helps me think logically and solve problems more effectively. I believe in learning by doing — building, breaking, fixing, and improving with every project.
-                </p>
-                <p class="section-desc">
-                    I believe in learning by doing — building, breaking, fixing, and improving with every project.
-                </p>
-            </div>
-            <div class="section-desc-mobile">
-                <p class="section-desc">
-                    Hi, I’m Kidus Yosef, an aspiring full-stack developer. I love building clean, functional, and visually engaging web projects.
-                </p>
-                <p class="section-desc">
-                    I’m learning modern web tech, improving my frontend skills, and exploring creative tools like Blender and Figma. I also enjoy data analysis to sharpen my problem-solving.
-                </p>
-                <p class="section-desc">
-                    I learn by doing — building, breaking, fixing, and improving with every project.
-                </p>
-            </div>
-        </section>
-        <section id="skills" class="skills-section glass">
-            <h3 class="section-subtitle">Skills</h3>
-            <ul class="skills-list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>Git & GitHub</li>
-            </ul>
-        </section>
-        <section id="goals" class="goals-section glass">
-            <h3 class="section-subtitle">🎯 Goals</h3>
-            <div class="goals-grid">
-                <div class="goal-item">
-                    <h4>🚀 Become a Strong Full-Stack Developer</h4>
-                    <p>Build a solid foundation in frontend and backend development by working on real projects. Long-term, aim to confidently design and develop complete web applications from scratch.</p>
+        <section id="contacts" class="contact-section glass">
+            <h2 class="section-title">Get in Touch!</h2>
+            <article class="info-desc">
+                <p class="paragraph-desc">Interested in working together or discussing a project?</p>
+                <p class="paragraph-desc">Feel free to reach out — I’m always open to new ideas and collaborations.</p>
+            </article>
+            <div class="contact-container">
+                <div class="contact-info glass">
+                    <h3 class="info-title">Based In</h3>
+                    <p class="info-desc">Ethiopia <img src="assets/images/ethiopia.png" alt="Ethiopia Flag" class="country-icon"></p> 
+                    <h3 class="info-title">Connect with me on: </h3>
+                    <div class="social-links">
+                        <a href="https://github.com/kid-junior" class="social-link github"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kidus-yosef-364a29332" class="social-link linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.upwork.com/freelancers/~01c59803c8b7122263?mp_source=share" class="social-link upwork"><i class="fa-brands fa-upwork"></i></a>
+                    </div>
                 </div>
-                <div class="goal-item">
-                    <h4>🎨 Blend Design with Functionality</h4>
-                    <p>Improve UI/UX and visual design skills while learning how to create interfaces that are both beautiful and easy to use. Long-term, aim to build visually polished and user-friendly experiences.</p>
-                </div>
-                <div class="goal-item">
-                    <h4>🛠️ Grow Through Projects and Practice</h4>
-                    <p>Continuously improve by building projects, refining workflows, and solving real problems. Long-term, grow into a well-rounded developer capable of contributing to meaningful and impactful software.</p>
-                </div>
+                <form action="https://formspree.io/f/xgovwdqd" method="post" id="contact-form" class="contact-form glass">
+                    <div class="form-field">
+                        <label for="FullName">Full Name: </label>
+                        <input type="text" name="Full_Name" id="FullName" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="EmailAddress">Email Address: </label>
+                        <input type="email" name="Email_Address" id="EmailAddress" pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" placeholder="Your@email.com" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="MessageContent">Message: </label>
+                        <textarea name="Message" id="MessageContent" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="form-field">
+                        <button type="submit" class="submit-btn btn">
+                            Send Message
+                            <dotlottie-player id="submit-lottie" src="https://lottie.host/32536b81-bafb-4a5d-a010-a0efad4e0c3d/UDWwLgOtnT.lottie" background="transparent" speed="1" style="width: 25px; height: 25px;" loop></dotlottie-player>
+                        </button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
