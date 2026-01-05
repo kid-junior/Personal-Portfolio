@@ -444,21 +444,15 @@ input:valid {
         padding: 1rem;
         text-align: center;
     }
-
     .contact-info .info-title {
-        font-size: 0.85rem;
-        margin-bottom: 0.25rem;
+        font-size: 0.95rem;
     }
-
-    .contact-info .info-desc {
-        font-size: 0.75rem;
-        margin-bottom: 0.25rem;
+    .info-desc{
+        font-size: 1.125rem;
     }
-
     .contact-info .social-links {
         max-width: 10rem;
         gap: 0.5rem;
         margin: 0 auto;
     }
 }
-
